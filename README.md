@@ -4,14 +4,14 @@ lista_inventos_tempranos = ["Granja de Papel", "Collar Antipulgas (idea inicial)
 
 # Inicio del ciclo for
 for invento in lista_inventos_tempranos:
-    # Inicio del bloque de código dentro del ciclo for
+    
     print("Joy ideó:", invento)
-    # Fin del bloque de código dentro del ciclo for
+    
 # Fin del ciclo for
 
 # Fin del Ejercicio 1
 •
-Explicación: Este código crea una lista llamada lista_inventos_tempranos con nombres de inventos hipotéticos de Joy. Luego, el ciclo for itera sobre cada elemento de esta lista, asignando cada invento a la variable invento en cada iteración, y finalmente imprime una frase indicando que Joy ideó ese invento.
+Explicación: Este código crea una lista llamada lista_inventos_tempranos con nombres de inventos hipotéticos de Joy. Luego, el ciclo *for* itera sobre cada elemento de esta lista, asignando cada invento a la variable invento en cada iteración, y finalmente imprime una frase indicando que Joy ideó ese invento.
 Ejercicio 2: Los Obstáculos en la Venta del Trapeador
 import random
 
@@ -38,7 +38,7 @@ for intento in range(1, numero_de_tiendas + 1):
     # Fin de la estructura condicional if
 # Fin del ciclo for
 
-print(f"Joy enfrentó {rechazos} rechazos antes de (hipotéticamente) lograr una aceptación.")
+print(f"Joy enfrentó {rechazos} rechazos antes de lograr una aceptación.")
 
 # Fin del Ejercicio 2
 •
