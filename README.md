@@ -17,7 +17,7 @@ for invento in lista_inventos_tempranos:
 Explicación:
 Este código crea una lista llamada lista_inventos_tempranos con nombres de inventos hipotéticos de Joy. Luego, el ciclo for itera sobre cada elemento de esta lista, asignando cada invento a la variable invento en cada iteración, y finalmente imprime una frase indicando que Joy ideó ese invento.
 
-Ejercicio 2: Los Obstáculos en la Venta del Trapeador
+# Ejercicio 2: Los Obstáculos en la Venta del Trapeador
 
 import random
 
