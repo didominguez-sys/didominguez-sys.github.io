@@ -1,0 +1,7 @@
+1. Crear imagen para banner de youtube que contenga el nombre del canal de youtube
+siguiendo este video:https://youtu.be/Ujz3onuFz0U?si=lfNP1qeEvI-y4Aav
+
+2. Quita el fondo de imagen según este video. Sube la imagen original, la modificada y el archivo de proyecto de Inkscape:
+Elige uno de los métodos para quitar el fondo
+https://youtu.be/X2tcCwfMdjw?si=9pi6O6JXoZqdVPgw
+
