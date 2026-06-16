@@ -1,0 +1,450 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Carta de Solicitud - Hábeas Data</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        html, body {
+            width: 100%;
+            height: 100%;
+        }
+        
+        body {
+            font-family: 'Calibri', 'Arial', sans-serif;
+            font-size: 11pt;
+            line-height: 1.5;
+            color: #000;
+            padding: 20px;
+            background-color: #f9f9f9;
+        }
+        
+        .page {
+            width: 21cm;
+            height: 29.7cm;
+            margin: 20px auto;
+            padding: 2.54cm;
+            background-color: white;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+        }
+        
+        .header {
+            text-align: center;
+            margin-bottom: 1.5cm;
+            padding-bottom: 0.8cm;
+            border-bottom: 2px solid #333;
+        }
+        
+        .header h1 {
+            font-size: 13pt;
+            font-weight: bold;
+            color: #000;
+            text-transform: uppercase;
+            letter-spacing: 0.3px;
+            line-height: 1.4;
+        }
+        
+        .destinatario {
+            margin-bottom: 1.2cm;
+            font-size: 11pt;
+        }
+        
+        .destinatario p {
+            margin-bottom: 0.15cm;
+            text-align: left;
+        }
+        
+        .destinatario strong {
+            font-weight: bold;
+        }
+        
+        .asunto-box {
+            margin-bottom: 1cm;
+            padding: 0.5cm;
+            border: 1px solid #999;
+            background-color: #f5f5f5;
+        }
+        
+        .asunto-label {
+            font-weight: bold;
+            font-size: 11pt;
+            display: block;
+            margin-bottom: 0.2cm;
+        }
+        
+        .asunto-texto {
+            font-size: 11pt;
+            text-align: justify;
+            line-height: 1.5;
+        }
+        
+        .copias {
+            margin-bottom: 1cm;
+            font-size: 10pt;
+            text-align: justify;
+        }
+        
+        .copias p {
+            margin-bottom: 0.2cm;
+        }
+        
+        .copias-label {
+            font-weight: bold;
+            display: inline;
+            min-width: 3cm;
+        }
+        
+        .saludo {
+            margin-bottom: 0.6cm;
+            font-size: 11pt;
+            text-align: justify;
+        }
+        
+        .contenido {
+            font-size: 11pt;
+            line-height: 1.6;
+        }
+        
+        .parrafo {
+            text-align: justify;
+            margin-bottom: 0.4cm;
+        }
+        
+        .contenido h2 {
+            font-size: 12pt;
+            font-weight: bold;
+            margin-top: 1cm;
+            margin-bottom: 0.4cm;
+            text-align: left;
+            text-transform: uppercase;
+            letter-spacing: 0.2px;
+        }
+        
+        .contenido h3 {
+            font-size: 11pt;
+            font-weight: bold;
+            margin-top: 0.6cm;
+            margin-bottom: 0.3cm;
+            text-align: left;
+        }
+        
+        .numerado {
+            text-align: justify;
+            margin-bottom: 0.4cm;
+        }
+        
+        .lista {
+            margin-left: 0.8cm;
+            margin-bottom: 0.4cm;
+        }
+        
+        .lista li {
+            text-align: justify;
+            margin-bottom: 0.2cm;
+            margin-left: 0.8cm;
+        }
+        
+        .tabla {
+            width: 100%;
+            border-collapse: collapse;
+            margin: 0.8cm 0;
+            font-size: 10pt;
+        }
+        
+        .tabla th, .tabla td {
+            border: 1px solid #000;
+            padding: 0.4cm;
+            text-align: center;
+        }
+        
+        .tabla th {
+            background-color: #e0e0e0;
+            font-weight: bold;
+            text-align: left;
+        }
+        
+        .tabla td {
+            text-align: justify;
+        }
+        
+        .firma {
+            margin-top: 2cm;
+            text-align: center;
+            font-size: 11pt;
+        }
+        
+        .firma-linea {
+            border-top: 1px solid #000;
+            width: 8cm;
+            margin: 1.8cm auto 0;
+        }
+        
+        .firma-nombre {
+            font-weight: bold;
+            margin-top: 0.4cm;
+            margin-bottom: 0.2cm;
+        }
+        
+        .firma-dato {
+            font-size: 10pt;
+            margin-bottom: 0.1cm;
+        }
+        
+        .footer {
+            margin-top: 1.5cm;
+            padding-top: 0.5cm;
+            border-top: 1px solid #999;
+            font-size: 10pt;
+        }
+        
+        .footer-label {
+            font-weight: bold;
+            display: block;
+            margin-bottom: 0.2cm;
+        }
+        
+        .footer p {
+            text-align: left;
+            margin-bottom: 0.1cm;
+            text-align: justify;
+        }
+        
+        a {
+            color: #0366d6;
+            text-decoration: none;
+        }
+        
+        em {
+            font-style: italic;
+        }
+        
+        @media print {
+            body {
+                background-color: white;
+                padding: 0;
+            }
+            .page {
+                width: 100%;
+                height: auto;
+                margin: 0;
+                padding: 2.54cm;
+                box-shadow: none;
+                page-break-after: always;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="page">
+        <!-- ENCABEZADO -->
+        <div class="header">
+            <h1>Carta de Solicitud de Consulta, Supresión de Datos Personales y Ejercicio de Derechos de Hábeas Data</h1>
+        </div>
+
+        <!-- DESTINATARIO -->
+        <div class="destinatario">
+            <p><strong>Señores</strong></p>
+            <p>Adelante Soluciones Financieras S.A.S. (Addi)<br>
+            NIT 901.216.768-4<br>
+            Carrera 69 No. 25B-44 Piso 2, Bogotá D.C.<br>
+            Correo electrónico: datos@addi.com</p>
+        </div>
+
+        <!-- ASUNTO -->
+        <div class="asunto-box">
+            <div class="asunto-label">Asunto:</div>
+            <div class="asunto-texto">Solicitud de consulta, supresión de datos personales, prueba de autorización e información sobre operaciones crediticias. Ejercicio de derechos como titular conforme a la Ley 1581 de 2012, el Decreto 1377 de 2013 compilado en el Decreto Único Reglamentario 1074 de 2015, la Ley 1266 de 2008 modificada por la Ley 2157 de 2021, y demás normas concordantes.</div>
+        </div>
+
+        <!-- COPIAS -->
+        <div class="copias">
+            <p><span class="copias-label">CC:</span> Superintendencia de Industria y Comercio (SIC) - Delegatura de Protección de Datos Personales, para su conocimiento y eventual actuación de oficio.</p>
+            <p><span class="copias-label">CC:</span> Superintendencia Financiera de Colombia (SFC), para su conocimiento en lo relativo al régimen de hábeas data financiero y crediticio.</p>
+        </div>
+
+        <!-- SALUDO -->
+        <div class="saludo">
+            <p>Respetados señores:</p>
+        </div>
+
+        <!-- INTRODUCCIÓN -->
+        <div class="contenido">
+            <p class="parrafo">Yo, <strong>Diego Fabián Domínguez Tapia</strong>, mayor de edad, identificado con cédula de ciudadanía No. <strong>1.143.125.681</strong>, actuando en calidad de titular de los datos personales, presento solicitud formal de consulta, prueba de autorización, información sobre el uso dado a mis datos, información sobre operaciones crediticias y supresión de datos personales.</p>
+
+            <!-- SECCIÓN 1: HECHOS -->
+            <h2>1. Hechos</h2>
+
+            <p class="numerado"><strong>1.1.</strong> Manifiesto de manera expresa e inequívoca que <strong>nunca he tenido relación comercial, contractual, crediticia ni de ninguna otra naturaleza con Adelante Soluciones Financieras S.A.S. (Addi)</strong>. No he solicitado productos o servicios, no he firmado contratos ni autorizaciones de tratamiento de datos, no he entregado información personal a esa entidad y no he interactuado con su plataforma ni con sus aliados comerciales.</p>
+
+            <p class="numerado"><strong>1.2.</strong> El día <strong>18 de mayo de 2026</strong> recibí en mi correo electrónico dfdominguez10@gmail.com una notificación de <strong>Have I Been Pwned (HIBP)</strong> con el asunto <em>"You've been pwned in the Addi data breach"</em>. En dicha notificación se informó que mi correo electrónico aparece dentro de la filtración masiva de datos asociada a Addi ocurrida en <strong>marzo de 2026</strong>.</p>
+
+            <p class="numerado"><strong>1.3.</strong> Según la información pública disponible, la filtración habría comprometido aproximadamente <strong>34.5 millones de cuentas</strong> e incluiría, entre otras categorías, direcciones de correo electrónico, documentos de identidad, puntajes crediticios, ingresos estimados, niveles socioeconómicos, direcciones IP, coordenadas de ubicación, nombres, teléfonos, direcciones físicas e historiales de compras.</p>
+
+            <p class="numerado"><strong>1.4.</strong> Como fuentes públicas de referencia sobre el incidente, relaciono:</p>
+            <ul class="lista">
+                <li>El Colombiano: <em>"Addi identificó actividad no autorizada en su plataforma y les comunicó a sus clientes sobre un ciberataque"</em> (https://www.elcolombiano.com/negocios/addi-ciberataque-hackeo-datos-filtracion-datos-usuarios-BB35164432).</li>
+                <li>Have I Been Pwned - página oficial del breach Addi (https://haveibeenpwned.com/Breach/ADDI).</li>
+                <li>Publicación de H4ckmanac en X/Twitter sobre el reclamo de autoría de ShinyHunters (https://x.com/H4ckmanac/status/2051609021690319278).</li>
+            </ul>
+
+            <p class="numerado"><strong>1.5.</strong> La presencia de mis datos en una base asociada a Addi resulta jurídicamente relevante porque, en ausencia de relación previa y autorización otorgada por mi parte, sugiere un posible tratamiento de datos personales sin autorización previa, expresa e informada, así como posibles fallas en los deberes de seguridad, confidencialidad, calidad, acceso restringido y responsabilidad demostrada.</p>
+
+            <!-- SECCIÓN 2: FUNDAMENTO JURÍDICO -->
+            <h2>2. Fundamento Jurídico</h2>
+
+            <p class="parrafo">Esta solicitud se formula con fundamento, entre otras normas, en:</p>
+
+            <ul class="lista">
+                <li><strong>Artículo 15 de la Constitución Política</strong>, que protege la intimidad, el buen nombre y el derecho a conocer, actualizar y rectificar la información recogida en bancos de datos y archivos públicos o privados.</li>
+                <li><strong>Ley 1581 de 2012</strong>, especialmente sus artículos 4, 8, 9, 10, 14, 15, 17, 18, 21, 23 y 25, relativos a principios de tratamiento, derechos del titular, autorización, consultas, reclamos, deberes de responsables y encargados, funciones de la SIC, sanciones y Registro Nacional de Bases de Datos.</li>
+                <li><strong>Decreto 1377 de 2013</strong>, compilado en el <strong>Decreto 1074 de 2015</strong>, especialmente en lo relativo al derecho de acceso, actualización, rectificación, supresión, contratos de transmisión y responsabilidad demostrada. En la compilación del Decreto 1074, estos temas corresponden, entre otros, a los artículos <strong>2.2.2.25.4.2</strong>, <strong>2.2.2.25.4.3</strong>, <strong>2.2.2.25.5.2</strong> y <strong>2.2.2.25.6.1</strong>.</li>
+                <li><strong>Ley 1266 de 2008</strong>, modificada por la <strong>Ley 2157 de 2021</strong>, en cuanto resulte aplicable por tratarse de información financiera, crediticia, comercial, de servicios o proveniente de terceros países.</li>
+                <li><strong>Ley 1273 de 2009</strong>, en cuanto los hechos descritos podrían relacionarse con conductas contra la información y los datos personales, sin perjuicio de las investigaciones que correspondan.</li>
+            </ul>
+
+            <p class="parrafo">La solicitud se fundamenta en las disposiciones anteriormente citadas, que consagran expresamente los derechos de acceso, rectificación, actualización y supresión de datos personales del titular.</p>
+
+            <!-- SECCIÓN 3: PETICIONES -->
+            <h2>3. Peticiones</h2>
+
+            <p class="parrafo">Con fundamento en los hechos y normas anteriores, solicito:</p>
+
+            <h3>Primera. Acceso y consulta de datos personales</h3>
+
+            <p class="parrafo">Solicito que se me informe, de manera completa, detallada y comprensible:</p>
+            <ol class="lista" style="list-style-type: decimal;">
+                <li>Cuáles son todos los datos personales que Addi tiene registrados sobre mi persona, incluyendo datos de identificación, contacto, financieros, crediticios, demográficos, de navegación, ubicación, dispositivos, validación, scoring, historial de compras o cualquier otra categoría.</li>
+                <li>La fuente exacta de donde Addi obtuvo cada dato personal, con indicación de entidad, persona o base de datos fuente, fecha de obtención, mecanismo de recolección y finalidad original.</li>
+                <li>La fecha exacta en que mis datos fueron incorporados a sus sistemas o bases de datos.</li>
+                <li>La lista de bases de datos, propias o de terceros, donde reposan mis datos bajo responsabilidad, encargo, transmisión o control de Addi.</li>
+                <li>Si dichas bases de datos estaban registradas ante la SIC en el Registro Nacional de Bases de Datos, cuando ello resulte exigible.</li>
+            </ol>
+
+            <h3>Segunda. Prueba de autorización</h3>
+
+            <p class="parrafo">Solicito copia de la autorización previa, expresa e informada que supuestamente habría otorgado para que Addi recolectara, almacenara, consultara, usara, circulara, transmitiera, transfiriera o tratara mis datos personales.</p>
+
+            <p class="parrafo">Si Addi considera que no requería autorización, solicito que identifique de forma expresa, concreta y documentada la excepción legal aplicable, explicando por qué dicha excepción ampararía cada categoría de dato tratada.</p>
+
+            <h3>Tercera. Uso dado a los datos</h3>
+
+            <p class="parrafo">Solicito que se me informe:</p>
+            <ol class="lista" style="list-style-type: decimal;">
+                <li>Las finalidades específicas para las cuales han utilizado mis datos personales.</li>
+                <li>Si realizaron análisis de perfil crediticio, scoring, validación de identidad, prevención de fraude, consultas a centrales de riesgo u operadores de información, indicando fechas, entidades consultadas y resultados asociados a mi información.</li>
+                <li>Si realizaron reportes positivos o negativos a centrales de riesgo u operadores de información, especificando fecha, contenido, entidad receptora y fundamento del reporte.</li>
+                <li>Si mis datos fueron compartidos, transmitidos o transferidos a terceros, incluyendo aliados comerciales, proveedores, encargados, entidades de cobranza, matrices, subordinadas, autoridades o terceros ubicados en Colombia o en el exterior.</li>
+            </ol>
+
+            <h3>Cuarta. Información sobre créditos u operaciones a mi nombre</h3>
+
+            <p class="parrafo">Solicito que se me informe si a mi nombre, o usando mis datos personales, se ha solicitado, tramitado, aprobado, desembolsado o mantenido algún crédito, producto financiero, línea de crédito, compra financiada, cuenta, obligación, saldo, cobro o reporte ante Addi, sus aliados o cualquier central de riesgo.</p>
+
+            <p class="parrafo">Si existe alguna operación asociada a mis datos, solicito copia íntegra del soporte correspondiente, incluyendo solicitud, contrato, autorización, validación de identidad, fecha, IP, dispositivo, canal, comercio aliado, monto, estado actual e historial de pagos o cobros.</p>
+
+            <h3>Quinta. Supresión, bloqueo y comunicación a terceros</h3>
+
+            <p class="parrafo">Solicito la <strong>supresión inmediata</strong> de la totalidad de mis datos personales de todas las bases de datos, archivos, sistemas, registros y repositorios bajo responsabilidad o encargo de Addi, salvo que ustedes acrediten de forma específica una obligación legal vigente que exija conservar una categoría concreta de datos por un plazo determinado.</p>
+
+            <p class="parrafo">Mientras se decide de fondo esta solicitud, solicito el <strong>bloqueo o restricción temporal</strong> de cualquier tratamiento, consulta, circulación, reporte o uso de mis datos personales que no sea estrictamente necesario para atender esta solicitud o cumplir una obligación legal expresamente identificada.</p>
+
+            <p class="parrafo">La supresión debe comprender, sin limitarse a:</p>
+            <ol class="lista" style="list-style-type: decimal;">
+                <li>Datos de identificación.</li>
+                <li>Datos de contacto.</li>
+                <li>Información financiera, crediticia, comercial o de servicios.</li>
+                <li>Datos biométricos, si existieren.</li>
+                <li>Datos de navegación, dirección IP, dispositivo y ubicación.</li>
+                <li>Datos demográficos, socioeconómicos, scoring o perfilamiento.</li>
+                <li>Registros de consultas ante centrales de riesgo u operadores de información.</li>
+                <li>Reportes realizados a terceros, operadores, aliados o autoridades.</li>
+                <li>Copias, respaldos o repositorios que contengan mis datos, conforme a los procedimientos técnicos y legales aplicables.</li>
+            </ol>
+
+            <p class="parrafo">Solicito además que Addi comunique esta solicitud de supresión, bloqueo o actualización a todos los terceros a quienes haya transferido, transmitido o comunicado mis datos personales, y que me remita constancia de dicha comunicación.</p>
+
+            <!-- SECCIÓN 4: PLAZOS LEGALES -->
+            <h2>4. Plazos Legales</h2>
+
+            <p class="parrafo">Los plazos legales aplicables son:</p>
+
+            <table class="tabla">
+                <tr>
+                    <th>Tipo de solicitud</th>
+                    <th>Fundamento</th>
+                    <th>Plazo máximo</th>
+                </tr>
+                <tr>
+                    <td>Consulta de datos</td>
+                    <td>Art. 14, Ley 1581 de 2012</td>
+                    <td>10 días hábiles</td>
+                </tr>
+                <tr>
+                    <td>Reclamo, corrección, actualización o supresión</td>
+                    <td>Art. 15, Ley 1581 de 2012</td>
+                    <td>15 días hábiles</td>
+                </tr>
+                <tr>
+                    <td>Prórroga del reclamo, si aplica</td>
+                    <td>Art. 15, Ley 1581 de 2012</td>
+                    <td>8 días hábiles adicionales</td>
+                </tr>
+            </table>
+
+            <p class="parrafo">Solicito confirmar el recibo de esta comunicación e indicar la fecha exacta de radicación para efectos del cómputo de términos.</p>
+
+            <!-- SECCIÓN 5: CANAL DE RESPUESTA -->
+            <h2>5. Canal de Respuesta</h2>
+
+            <p class="parrafo" style="text-align: center;">La respuesta y todos los documentos relacionados deberán enviarse al siguiente correo electrónico:</p>
+
+            <p style="text-align: center; font-weight: bold; margin-bottom: 0.6cm;">dfdominguez10@gmail.com</p>
+
+            <!-- SECCIÓN 6: RESERVA DE ACCIONES -->
+            <h2>6. Reserva de Acciones</h2>
+
+            <p class="parrafo">Si Addi no responde dentro de los términos legales, responde de forma incompleta, no acredita autorización válida o no demuestra una base legal suficiente para el tratamiento de mis datos, me reservo el derecho de:</p>
+            <ol class="lista" style="list-style-type: decimal;">
+                <li>Presentar queja ante la Superintendencia de Industria y Comercio por presunta infracción al régimen general de protección de datos personales.</li>
+                <li>Presentar queja ante la Superintendencia Financiera de Colombia en lo relativo al régimen de hábeas data financiero y crediticio, si resulta aplicable.</li>
+                <li>Interponer acción de tutela para la protección de mis derechos fundamentales al hábeas data, intimidad, buen nombre e información.</li>
+                <li>Presentar denuncia penal si se evidencian conductas relacionadas con acceso, uso, divulgación o tratamiento no autorizado de mis datos personales.</li>
+                <li>Iniciar las acciones civiles o indemnizatorias que correspondan por los perjuicios materiales o inmateriales que se acrediten.</li>
+            </ol>
+
+            <!-- SECCIÓN 7: ANEXOS -->
+            <h2>7. Anexos</h2>
+
+            <p class="parrafo">Anexo copia o soporte de:</p>
+            <ol class="lista" style="list-style-type: decimal;">
+                <li>Notificación de Have I Been Pwned del 18 de mayo de 2026, asunto <em>"You've been pwned in the Addi data breach"</em>.</li>
+                <li>Copia de esta comunicación para constancia del titular.</li>
+            </ol>
+        </div>
+
+        <!-- CIERRE Y FIRMA -->
+        <div class="firma">
+            <p>Atentamente,</p>
+            <div class="firma-linea"></div>
+            <p class="firma-nombre">Diego Fabián Domínguez Tapia</p>
+            <p class="firma-dato">C.C. No. 1.143.125.681</p>
+            <p class="firma-dato">dfdominguez10@gmail.com</p>
+            <p class="firma-dato">Fecha: 16 de junio de 2026</p>
+        </div>
+
+        <!-- FOOTER -->
+        <div class="footer">
+            <span class="footer-label">Copias:</span>
+            <p>Superintendencia de Industria y Comercio (SIC) - Delegatura de Protección de Datos Personales.</p>
+            <p>Superintendencia Financiera de Colombia (SFC).</p>
+            <p>Archivo personal del titular.</p>
+        </div>
+    </div>
+</body>
+</html>
